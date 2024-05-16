@@ -2,6 +2,7 @@ import { IoSearch } from "react-icons/io5";
 import { FiPhone } from "react-icons/fi";
 import { FaRegUser } from "react-icons/fa6";
 import { PiShoppingCart } from "react-icons/pi";
+import NavLinks from "./NavLinks";
 
 const Navbar = () => {
 
@@ -23,7 +24,7 @@ const Navbar = () => {
                 </form>
 
                 <div className="flex items-center gap-3 border-[#e8d3d3] text-lg border p-2 rounded-lg">
-                    <FiPhone />
+                    <FiPhone className="text-xl"/>
                     <span>09638090000</span>
                 </div>
 
@@ -43,7 +44,9 @@ const Navbar = () => {
             </div>
 
             <div className="border-t border-[#e8d3d3]">
-
+                {
+                    <NavLinks></NavLinks>
+                }
             </div>
 
         </div>
